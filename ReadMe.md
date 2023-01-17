@@ -2,7 +2,7 @@
 
 ## How to run
 1. Clone repo and install all dependencies using ```npm install``` in cmd.
-2. Enter ```npm run wdio_android_9``` or ```wdio_android_13``` in cmd as you wish. Devicename you can read in config files.
+2. Enter ```npm run wdio_android_9``` or ```npm run wdio_android_13``` in cmd as you wish. Devicename you can read in config files.
 
 ## Task
 1.  Clone repo and install all dependencies.
