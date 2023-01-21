@@ -1,8 +1,8 @@
 const path = require('path')
 
 exports.config = {
-    user: process.env.BROWSERSTACK_USERNAME || 'daniilpolianskyi_lxCLYz',
-    key: process.env.BROWSERSTACK_ACCESS_KEY || '73xjVuSa2wUwpyTyWCxp',
+    user: process.env.BROWSERSTACK_USERNAME || ${{ secrets.BROWSERSTACK_USERNAME }},
+    key: process.env.BROWSERSTACK_ACCESS_KEY || ${{ secrets.BROWSERSTACK_ACCESS_KEY }},
   
     updateJob: false,
     specs: [

@@ -1,7 +1,6 @@
 {
     "validEmail": "valid_email@email.com",
     "validPassword": "valid_pass",
-
     "invalidEmail": "invalid_email@email",
     "invalidPassword": "123"
 }

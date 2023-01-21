@@ -5,39 +5,39 @@ const forms = require('../pages/Forms')
 const swipe = require('../pages/Swipe')
 
 describe('Login', () => {
-    it('should not login', async () => {
+    it('Should not log in because of invalid credentials', async () => {
         await navbar.navbarLoginClick()
         await login.loginInvalid()
         await login.loginInvalidCheck()
     })
-    it('should login', async () => {
+    it('Should log in with valid credentials', async () => {
         await login.loginValid()
         await login.loginValidCheck()
     })
 })
 
 describe('Sign up', () => {
-    it('should not sign up', async () => {
+    it('Should not sign up because of invalid credentials', async () => {
         await navbar.navbarLoginClick()
         await signUp.signUpRedirectClick()
         await signUp.signUpInvalid()
         await signUp.signUpInvalidCheck()
     })
-    it('should sign up', async () => {
+    it('Should login with valid credentials', async () => {
         await signUp.signUpValid()
         await signUp.signUpValidCheck()
     })
 })
 
 describe('Forms', () => {
-    it('should fill out the form', async () => {
+    it('Should fill out the form', async () => {
         await navbar.navbarFormsClick()
         await forms.formsFillTheForm()
     })
 })
 
 describe('Swipe', () => {
-    it('should swipes', async () => {
+    it('Should swipes by clicking on navigation buttons', async () => {
         await navbar.navbarSwipeClick()
         await swipe.swipeNavClick(2)
         await swipe.swipeNavClick(3)
