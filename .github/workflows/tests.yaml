@@ -1,0 +1,19 @@
+name: Tests
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  Report:
+    name: Test
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: NPM install
+        run: npm install
+
+      - name: Run tests
+        run: npm run wdio_android_13
