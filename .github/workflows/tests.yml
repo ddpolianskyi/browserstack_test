@@ -5,8 +5,8 @@ on:
       - 'master'
 
 jobs:
-  Report:
-    name: Test
+  tests:
+    name: Tests
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
