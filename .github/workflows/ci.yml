@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: NPM install
+      - name: NPM install 
         run: npm install
 
       - name: Run tests
