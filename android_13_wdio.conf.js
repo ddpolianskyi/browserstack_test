@@ -3,8 +3,8 @@
 const path = require('path')
 
 exports.config = {
-  user: process.env.BROWSERSTACK_USERNAME,
-  key: process.env.BROWSERSTACK_ACCESS_KEY,
+  user: ${{ secrets.BROWSERSTACK_USERNAME }},
+  key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }},
   services: ['browserstack'],
   
     updateJob: false,

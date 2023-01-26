@@ -8,7 +8,7 @@
     "@wdio/spec-reporter": "^8.1.2"
   },
   "scripts": {
-    "wdio_android_9": "wdio run ./android_9_wdio.conf.js BROWSERSTACK_USERNAME=${{secrets.BROWSERSTACK_USERNAME}} BROWSERSTACK_ACCESS_KEY=${{secrets.BROWSERSTACK_ACCESS_KEY}}",
-    "wdio_android_13": "wdio run ./android_9_wdio.conf.js BROWSERSTACK_USERNAME=${{secrets.BROWSERSTACK_USERNAME}} BROWSERSTACK_ACCESS_KEY=${{secrets.BROWSERSTACK_ACCESS_KEY}}"
+    "wdio_android_9": "wdio run ./android_9_wdio.conf.js",
+    "wdio_android_13": "wdio run ./android_9_wdio.conf.js"
   }
 }
