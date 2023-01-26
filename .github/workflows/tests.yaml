@@ -14,9 +14,6 @@ jobs:
 
       - name: NPM install 
         run: npm install
-        env:
-          BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
-          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
 
       - name: Run tests
-        run: npm run wdio_android_13
+        run: BROWSERSTACK_USERNAME=${{secrets.BROWSERSTACK_USERNAME}} BROWSERSTACK_ACCESS_KEY=${{secrets.BROWSERSTACK_ACCESS_KEY}} npm run wdio_android_13
